@@ -1,0 +1,36 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .carousel-controls button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .carousel-controls button:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-controls button:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+  
